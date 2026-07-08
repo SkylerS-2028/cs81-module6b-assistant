@@ -31,3 +31,14 @@ PersonalAssistant.prototype.reportMood = function(){
     console.log(`Your current mood is '${this.mood}'`);
 }
 
+// Day Simulation
+
+let assistant = new PersonalAssistant("Personal Assistant");
+console.log(`Hello I am your personal assistant! I can help you with task and mood management! You can call me ${assistant.name}`);
+assistant.reportMood();
+assistant.addTask("study");
+assistant.addTask("make breakfast");
+assistant.addTask("clean room");
+assistant.reportMood();
+assistant.completeTask();
+assistant.reportMood();
