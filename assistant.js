@@ -32,7 +32,6 @@ PersonalAssistant.prototype.reportMood = function(){
 }
 
 // Day Simulation
-
 let assistant = new PersonalAssistant("Personal Assistant");
 console.log(`Hello I am your personal assistant! I can help you with task and mood management! You can call me ${assistant.name}`);
 assistant.reportMood();
