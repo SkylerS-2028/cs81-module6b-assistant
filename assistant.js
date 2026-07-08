@@ -7,6 +7,10 @@ function PersonalAssistant(name){
 
 PersonalAssistant.prototype.addTask = function(task) {
     this.tasks.push(task);
-    console.log(`Added ${task} task.`);
+    console.log(`Added '${task}' task.`);
 }
 
+PersonalAssistant.prototype.completeTask = function(){
+    console.log(`You have completed '${this.tasks[0]}' task.`);
+    this.tasks.shift();
+}
