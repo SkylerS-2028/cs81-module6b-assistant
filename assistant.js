@@ -14,3 +14,8 @@ PersonalAssistant.prototype.completeTask = function(){
     console.log(`You have completed '${this.tasks[0]}' task.`);
     this.tasks.shift();
 }
+
+PersonalAssistant.prototype.reportMood = function(){
+    console.log(`Your current mood is '${this.mood}'`);
+}
+
